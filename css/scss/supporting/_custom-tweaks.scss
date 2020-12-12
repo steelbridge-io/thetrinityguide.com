@@ -1,0 +1,23 @@
+/* -------------------
+Custom Tweaks
+-------------------- */
+.no-margin {
+  margin: 0;
+}
+.h2 {
+  font-size: 28px;
+}
+
+body {
+  padding-top: 0px;
+}
+.covid-button {
+  background-color: var(--background-orange);
+  padding: 1em 2em;
+  border-radius: 20px;
+  border: 1.5px solid #000;
+}
+.covid-button h2 {
+  padding: 0;
+  margin: 0;
+}

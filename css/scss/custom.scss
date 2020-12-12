@@ -1,0 +1,76 @@
+/* Custom CSS
+ *
+ * - Archive
+ * - Custom Margins / Padding
+ * - New Custom Hero Image / Video
+ * - Custom Tweaks
+ * - Animate In
+ * - Links
+ * - Paralax
+ * - Buttons
+ * - Custom Padding And Margins
+ * - Misc
+ * - Sidebar
+ * - Site Header
+ * - Entry Title
+ * - Images
+ * - Call To Action
+ * - Collapsible
+ * - Custom Logo
+ * - Site Tagline
+ * - Vances Tackle
+ * - Featured Section
+ * - Featured Page
+ * - Testimonials 2
+ * - Mail Chimp
+ * - Forms
+ * - Landing Pages
+ * - Instafeed
+ * - Bootstrap CSS
+ * - Flex CSS
+ * - Media Queries
+*/
+
+
+:root {
+  --background-orange : #F6AB2C;
+  --background-brown : #333333;
+  --text-orange: #F6AB2C;
+  --link-hover: #aaaaaa;
+}
+
+@import "supporting/archive";
+@import "supporting/custom-margins-padding";
+@import "supporting/custom-hero-image-video";
+@import "supporting/custom-tweaks";
+@import "supporting/animate-in";
+@import "supporting/links";
+@import "supporting/parallax";
+@import "supporting/buttons";
+@import "supporting/misc";
+@import "supporting/sidebar";
+@import "supporting/site-header";
+@import "supporting/entry-title";
+@import "supporting/call-to-action";
+@import "supporting/collapsible";
+@import "supporting/custom-logo";
+@import "supporting/site-tagline";
+@import "supporting/vances-tackle";
+@import "supporting/featured-section";
+@import "supporting/testimonials";
+@import "supporting/above-footer-widget";
+@import "supporting/mailchimp";
+@import "supporting/forms";
+@import "supporting/landing-pages";
+@import "supporting/instagram";
+@import "supporting/bootstrap";
+@import "supporting/flex";
+@import "supporting/widgets";
+
+
+
+@import "supporting/media-queries";
+
+
+
+

@@ -1,0 +1,42 @@
+/* === Featured Section === */
+#featured-page-4 {
+  margin-bottom: 2.618em;
+  background-color: #0FBFEA;
+  padding: 3.618em 1.618em;
+}
+#featured-page-4 .page .entry-content p {
+  color: #333333;
+}
+#featured-page-4 h2 {
+  font-size: 36px;
+}
+.featured-image-fp {
+  border-radius: 100px;
+}
+
+.featured-image-a, .featured-image-a:hover {
+  border: none;
+  text-decoration: none;
+}
+
+.featured-image-a:hover {
+  opacity: 0.8;
+}
+/* === Featured Page === */
+/* Fishing Report */
+#featured-post-2 .widget-wrap h4.widget-title.widgettitle,
+#featured-page-4 .widget-wrap h4.widget-title.widgettitle,
+#featured-custom-post-type-3 .widget-wrap h4.widget-title.widgettitle {
+  font-size: 36px;
+}
+
+#featured-custom-post-type-3.widget.featured-content.featuredpost {
+  background-color: #f5f5f5;
+  padding: 1.618em;
+  margin-bottom: 2.618em;
+}
+#featured-post-2.widget.featured-content.featuredpost {
+  background-color: #f5f5f5;
+  padding: 1.618em;
+  margin-bottom: 2.618em;
+}

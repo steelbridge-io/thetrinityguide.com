@@ -1,0 +1,45 @@
+/* === Vances Tackle === */
+.paulina a img {
+  width: 100% !important;
+  border-radius: 8px !important;
+}
+.vance-container {
+  max-width: 100%;
+}
+.vance-container::before {
+  content: "";
+}
+.vance-box {
+  width: 100%;
+  margin: 2.618em auto 1.618em;
+  padding-top: 1.618em;
+}
+.vance-box:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.vance-img {
+  max-width: 100%;
+  margin-left: 15%;
+  float: left;
+  padding-right: .5em;
+}
+.img-vance {
+  float: left;
+}
+.vance-text {
+  display: inline;
+  color: #999;
+  float: left;
+  max-width: 60%;
+  padding-left: .5em;
+}
+@media screen and (max-width: 1024px) {
+  .vance-text, .vance-img {
+    max-width: 100%;
+    margin: 0 auto;
+    float: none;
+    text-align: center;
+  }
+}

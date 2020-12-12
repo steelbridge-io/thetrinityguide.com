@@ -1,0 +1,94 @@
+/* ------------------
+Animate In
+--------------------- */
+.site-tagline-right.module {
+  position: relative;
+  z-index: 1;
+}
+#insta-cont.container-fluid {
+  position: relative;
+  z-index: 2;
+}
+
+.animate-one {
+  transform: translateY(150px);
+  animation: animate-one 2.8s ease forwards;
+}
+.animate-two {
+  transform: translateY(150px);
+  animation: animate-two 3.2s ease forwards;
+}
+.animate-three {
+  transform: translateY(150px);
+  animation: animate-three .5s ease forwards;
+}
+.animate-four {
+  transform: translateY(150px);
+  animation: animate-four 1s ease forwards;
+}
+.animate-five {
+  transform: translateY(150px);
+  animation: animate-five 1.5s ease forwards;
+}
+.animate-six {
+  transform: translateY(150px);
+  animation: animate-six 2s ease forwards;
+}
+.animate-seven {
+  transform: translateX(3050px);
+  animation: animate-seven 2s ease forwards;
+  animation-delay: 1s;
+}
+
+.animate-one:nth-child(odd) {
+  animation-duration: 2.8s;
+}
+.animate-two:nth-child(odd) {
+  animation-duration: 3.5s;
+}
+.animate-three:nth-child(odd) {
+  animation-duration: .5s;
+}
+.animate-four:nth-child(odd) {
+  animation-duration: 1s;
+}
+.animate-five:nth-child(odd) {
+  animation-duration: 1.5s;
+}
+.animate-six:nth-child(odd) {
+  animation-duration: 2s;
+}
+.animate-seven:nth-child(odd) {
+  animation-duration: 2s;
+  animation-delay: 1s;
+}
+
+@keyframes animate-one {
+  to { transform: translateY(0);}
+}
+@keyframes animate-two {
+  to { transform: translateY(0);}
+}
+@keyframes animate-three {
+  to { transform: translateY(0);}
+}
+@keyframes animate-four {
+  to { transform: translateY(0);}
+}
+@keyframes animate-five {
+  to { transform: translateY(0);}
+}
+@keyframes animate-six {
+  to { transform: translateY(0);}
+}
+@keyframes animate-seven {
+  to { transform: translateX(0);}
+}
+
+.animate-eight {
+  animation: jamed-pcst 1.5s alternate ease-in;
+}
+@keyframes jamed-pcst {
+  0%   {transform: scale(.1);}
+  100% {transform: scale(1);}
+}

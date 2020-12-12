@@ -1,0 +1,108 @@
+/* === Mail Chimp === */
+
+.grow-one {
+  animation: crescendo 1.5s alternate ease-in;
+}
+
+@keyframes crescendo {
+  0%   {transform: scale(.5);}
+  100% {transform: scale(1);}
+}
+
+#mailchimp-fp label {
+  color: #333333;
+}
+
+#mc_embed_signup {
+  clear:left;
+  font:14px Helvetica,Arial,sans-serif;
+  width:100%;
+}
+#mailchimp-fp #mc_embed_signup,
+#mailchimp-sb #mc_embed_signup {
+  background:#ccc;
+}
+
+#mc_embed_signup {
+  clear:left;
+  font:14px Helvetica,Arial,sans-serif;
+  width:100%;
+}
+
+#mailchimp-fp {
+  color: #000;
+}
+#mailchimp-fp input#mce-EMAIL.email,
+#mailchimp-sb input#mce-EMAIL.email {
+  width: 80%;
+}
+#mc_embed_signup .button,
+#mc_embed_signup_top .button{
+  background-color: #f6ab2c;
+}
+#mc_embed_signup .button:hover
+#mc_embed_signup_top .button:hover{
+  background-color: #f4a012;
+}
+
+#mailchimp-fp form#mc-embedded-subscribe-form.validate,
+#mailchimp-sb form#mc-embedded-subscribe-form.validate{
+  background-color: #ccc;
+  padding: 1.618em;
+}
+
+@media (min-width: 992px) {
+  /* MailChimp */
+  .header-ttg-cta #mc_embed_signup_scroll label {
+    font-size: 20px !important;
+    vertical-align: middle !important;
+  }
+
+
+  .header-ttg-cta #mc_embed_signup {
+    border-radius: 5px;
+    margin-bottom: 1.618em;
+  }
+
+
+  .header-ttg-cta #mc_embed_signup label {
+    display: initial !important;
+    padding-bottom: 0 !important;
+  }
+
+  .header-ttg-cta .show-under-1179 #mc_embed_signup label {
+    display: block !important;
+  }
+}
+
+.show-under-1179 {
+  display: none;
+}
+.header-ttg-cta #mc_embed_signup {
+  border-radius: 5px;
+  margin-bottom: 1.618em;
+}
+
+@media (max-width: 1179px) {
+  .hide-under-1179 {
+    display: none;
+  }
+  .show-under-1179 {
+    display: initial;
+  }
+}
+
+@media (max-width: 768px) {
+  .show-under-1179 #mc_embed_signup {
+    padding: 0 1em;
+  }
+  .header-ttg-cta {
+    padding: 0 1.618em;
+  }
+  .widget-area.header-widget-area {
+    margin-bottom: 0.6em;
+  }
+  .header-ttg-cta #mc_embed_signup_scroll label {
+    font-size: 20px !important;
+  }
+}

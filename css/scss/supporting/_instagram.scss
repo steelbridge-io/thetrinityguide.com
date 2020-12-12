@@ -1,0 +1,39 @@
+/* === Instafeed === */
+
+.container-fluid.accomodations {
+  padding: 1.618em 0;
+  text-align: center;
+  background-color: var(--background-brown);
+  color: var(--text-orange);
+}
+.container-fluid.accomodations h2 {
+  font-size: 38px;
+}
+.container-fluid.accomodations a {
+  color: var(--text-orange);
+}
+.container-fluid.accomodations a:hover {
+  color: var(--link-hover);
+}
+h2.insta-title {
+  text-align: center;
+  padding: 1.618em 0 .5em;
+  color: #f6ab2c;
+}
+
+#insta-cont .row {
+  background-color: #333333;
+  padding: 1.618em 0;
+  align-items: auto;
+}
+
+p.insta-comm {
+  color: beige;
+  display: block;
+  word-wrap: break-word;
+}
+
+#insta-cont.container-fluid {
+  background-color: #333333;
+}
+

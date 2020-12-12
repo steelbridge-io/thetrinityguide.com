@@ -1,0 +1,56 @@
+/* ----------------------
+Parallax
+----------------------- */
+#topparallax.parallax-window {
+  background: transparent;
+}
+.parallax-window {
+  min-height: 600px;
+}
+.cta-box {
+  position: relative;
+  z-index: 1;
+}
+#top-parallax-cta .cta-container {
+  margin: 0 auto;
+  text-align: center;
+  background: transparent;
+  border-radius: 15px;
+}
+
+#bottom-parallax-cta .cta-container {
+  /*margin: 0 auto;*/
+  text-align: center;
+  background: transparent;
+  border-radius: 15px;
+}
+.button.mt-1618 {
+  margin-top: 1.618em !important;
+}
+.cta-container section .widget-wrap {
+  padding: 1.9em;
+}
+.cta {
+  position: absolute;
+  z-index: 1000;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+}
+#top-parallax-cta .cta {
+  position: absolute;
+  z-index: 1000;
+  top: 14%;
+  width: 100%;
+  text-align: center;
+}
+
+.cta h2, .cta h4, .cta h5 {
+  color: #f6ab2c;
+}
+.cta h4 {
+  font-size: 20px;
+}
+.cta a {
+  color: #000;
+}

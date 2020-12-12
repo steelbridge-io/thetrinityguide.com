@@ -1,0 +1,15 @@
+/** Media Queries
+========================================== */
+@media (min-width: 1179px) {
+  .page .site-container .site-tagline .wrap .site-inner,
+  .archive .site-container .site-tagline .wrap .site-inner,
+  .single .site-container .site-tagline .wrap .site-inner {
+    padding: 1em;
+  }
+}
+
+@media (max-width: 1178px) {
+  .archive .site-container .site-tagline .wrap .site-inner {
+    margin-top: 3em;
+  }
+}
