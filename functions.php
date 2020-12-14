@@ -390,9 +390,16 @@ function minimum_site_tagline() {
   }
   
 }
+add_action('wp_body_open', 'custom_content_after_body_open_tag');
 function custom_content_after_body_open_tag() {
   ?>
   <div id="wptime-plugin-preloader"></div>
   <?php
 }
-add_action('wp_body_open', 'custom_content_after_body_open_tag');
+
+  function my_custom_css() {
+    if (function_exists('is_shop') && is_shop()) {
+      echo "<style type='text/css'>.entry-content .woocommerce{display:none;}</style>";
+    }
+  }
+  add_action('wp_head', 'my_custom_css' );

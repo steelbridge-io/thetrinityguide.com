@@ -1,0 +1,24 @@
+/*==== Woocommerce ====*/
+
+.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt {
+  background-color: $brown;
+}
+
+.woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover {
+  background-color: $orange;
+  color: $brown;
+}
+.wc-block-grid__product-add-to-cart.wp-block-button .wp-block-button__link {
+  background-color: $brown;
+}
+
+.wc-block-grid__product-add-to-cart.wp-block-button .wp-block-button__link:hover {
+  background-color: $orange;
+  color: $brown;
+}
+ul.wc-block-grid__products {
+  li.wc-block-grid__product {
+    list-style-type: none !important;
+  }
+}
+
