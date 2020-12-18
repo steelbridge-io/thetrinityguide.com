@@ -223,9 +223,9 @@ add_action( 'genesis_after_entry', 'genesis_after_entry_widget_area', 5 );
 
 //* Register widget areas
 genesis_register_sidebar( array(
-	'id'					=> 'site-logo-text',
-	'name'				=> __( 'Site Logo And Text', 'minimum' ),
-	'description'	=> __( 'Adds logo and text to front page hero image', 'minimum' ),
+	'id'		  => 'site-logo-text',
+	'name'		  => __( 'Site Logo And Text', 'minimum' ),
+	'description' => __( 'Adds logo and text to front page hero image', 'minimum' ),
 ) );
 genesis_register_sidebar( array(
 	'id'          => 'site-tagline-right',
@@ -263,11 +263,11 @@ genesis_register_sidebar( array(
     'description' => __('Adds text area option for top parallax section', 'minimum')
 ));
 genesis_register_sidebar( array(
-	'id'								=> 'sponsors-section',
-	'name'							=> __('Sponsors', 'minimum'),
-	'description'				=> __('Add a section for sponsors', 'minimum'),
-	'before_widget'			=> '<div class="vance-box">',
-	'after_widget'			=> '</div>'
+	'id'				=> 'sponsors-section',
+	'name'				=> __('Sponsors', 'minimum'),
+	'description'		=> __('Add a section for sponsors', 'minimum'),
+	'before_widget'		=> '<div class="vance-box">',
+	'after_widget'		=> '</div>'
 ));
 genesis_register_sidebar( array(
 	'id'          => 'cta-parallax',
@@ -329,9 +329,8 @@ function after_content_img() {
 }
 
 
-
 // Adds second testimonial section
-add_action( 'genesis_before_content', 'front_page_testimonial_two');
+add_action( 'genesis_before_content', 'front_page_testimonial_two', 15);
 function front_page_testimonial_two() {
 	if (is_home() || is_front_page()) {
 		echo '<div class="fp-testimonial-two">';
