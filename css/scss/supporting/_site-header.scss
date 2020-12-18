@@ -1,12 +1,15 @@
-/* === Site Header === */
+/* ====  Site Header  ==== */
+
+
 .site-inner.featured-img-wrap {
   width: 100%;
-  height: 400px;
+  height: auto;
+  margin-top: 6em;
 }
 .site-inner.featured-img-wrap img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
 }
 .minimum .site-tagline {
   margin-top: 200px;
