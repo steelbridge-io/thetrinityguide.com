@@ -7,6 +7,7 @@ include_once( get_stylesheet_directory() . '/lib/theme-defaults.php' );
 include_once( get_stylesheet_directory() . '/lib/custom-cta-header.php' );
 include_once( get_stylesheet_directory() . '/lib/fishing-report-cpt.php' );
 include_once( get_stylesheet_directory() . '/lib/animate-in.php' );
+include_once( get_stylesheet_directory() . '/lib/woocommerce.php');
 
 add_action('genesis_header', 'add_featured_image', 20);
 function add_featured_image()
@@ -73,12 +74,12 @@ add_theme_support( 'genesis-responsive-viewport' );
 add_action( 'wp_enqueue_scripts', 'minimum_enqueue_scripts' );
 function minimum_enqueue_scripts() {
   
-  wp_enqueue_style ( 'custom-style', get_stylesheet_directory_uri() . '/css/custom.css', array(), null, 'all' );
+    wp_enqueue_style ( 'custom-style', get_stylesheet_directory_uri() . '/css/custom.css', array(), null, 'all' );
 	
-  wp_enqueue_script( 'minimum-responsive-menu', get_bloginfo( 'stylesheet_directory' ) . '/js/responsive-menu.js', array( 'jquery' ), '1.0.0' );
+    wp_enqueue_script( 'minimum-responsive-menu', get_bloginfo( 'stylesheet_directory' ) . '/js/responsive-menu.js', array( 'jquery' ), '1.0.0' );
   
-  wp_register_style('font-awesome', 'https://use.fontawesome.com/releases/v5.2.0/css/all.css');
-  wp_enqueue_style('font-awesome');
+    wp_register_style('font-awesome', 'https://use.fontawesome.com/releases/v5.2.0/css/all.css');
+    wp_enqueue_style('font-awesome');
   
 	wp_enqueue_style( 'dashicons' );
 	wp_enqueue_style( 'minimum-google-fonts', 'https://fonts.googleapis.com/css?family=Roboto:300,400|Roboto+Slab:300,
@@ -87,13 +88,15 @@ function minimum_enqueue_scripts() {
  
 	wp_enqueue_script('global-js', get_stylesheet_directory_uri() . '/js/global-custom.js', array(), '1.0.0', true );
   
-  wp_enqueue_script('parallax-js', get_stylesheet_directory_uri() . '/parallax/parallaxjs/parallax.min.js', array() ,
+    wp_enqueue_script('parallax-js', get_stylesheet_directory_uri() . '/parallax/parallaxjs/parallax.min.js', array() ,
     '1.4.2', true );
+    
+    wp_enqueue_script('gravityform-woo', get_stylesheet_directory_uri() . '/js/gravityforms.js', array(), '', true );
   
-  if( is_home() ) {
-    wp_enqueue_script('custom-js', get_stylesheet_directory_uri() . '/js/slide-in-collapse.js', array(), '1.0.0',
-      true);
-  }
+    if( is_home() ) {
+      wp_enqueue_script('custom-js', get_stylesheet_directory_uri() . '/js/slide-in-collapse.js', array(), '1.0.0',
+        true);
+    }
 
 }
 
@@ -401,4 +404,12 @@ function custom_content_after_body_open_tag() {
       echo "<style type='text/css'>.entry-content .woocommerce{display:none;}</style>";
     }
   }
-  add_action('wp_head', 'my_custom_css' );
+ // add_action('wp_head', 'my_custom_css' );
+  
+  // Find and change Due Date to Pay Guide
+  $time = 1;
+  $path_to_file  	= ABSPATH . 'wp-content/plugins/deposits-for-woocommerce/includes/functions.php';
+  $file_content	= file_get_contents($path_to_file);
+  $file_contents	=	str_replace("<th><?php echo __('Due Payment:', 'deposits-for-woocommerce'); ?></th>", "<th><?php echo __('Pay Guide:', 'deposits-for-woocommerce'); ?></th>", $file_content, $time );
+  
+  file_put_contents($path_to_file, $file_contents);

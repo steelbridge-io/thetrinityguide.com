@@ -22,3 +22,19 @@ ul.wc-block-grid__products {
   }
 }
 
+.deposits-frontend-wrapper {
+  .pretty:nth-child(3) {
+    display: none;
+  }
+}
+
+.deposit-notice {
+  font-weight: bold;
+}
+
+.order-duepay {
+  th {
+    color: red;
+  }
+}
+
