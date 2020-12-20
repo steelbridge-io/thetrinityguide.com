@@ -1361,6 +1361,10 @@ ul.wc-block-grid__products li.wc-block-grid__product {
   color: red;
 }
 
+.product-template-default .site-container .site-tagline .wrap .site-inner {
+  margin-top: 10em;
+}
+
 /** SCSS Shop
 ========================== */
 #ttg-shop {

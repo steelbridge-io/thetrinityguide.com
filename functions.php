@@ -13,7 +13,7 @@ add_action('genesis_header', 'add_featured_image', 20);
 function add_featured_image()
 {
   
-  if (is_page() || is_single()) {
+  if (is_page() || is_single() & !is_singular('product')) {
     
     if (has_post_thumbnail()) {
       $featured_image = get_the_post_thumbnail();
