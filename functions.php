@@ -407,9 +407,9 @@ function custom_content_after_body_open_tag() {
  // add_action('wp_head', 'my_custom_css' );
   
   // Find and change Due Date to Pay Guide
-  $time = 1;
+ /* $time = 1;
   $path_to_file  	= ABSPATH . 'wp-content/plugins/deposits-for-woocommerce/includes/functions.php';
   $file_content	= file_get_contents($path_to_file);
-  $file_contents	=	str_replace("<th><?php echo __('Due Payment:', 'deposits-for-woocommerce'); ?></th>", "<th><?php echo __('Pay Guide:', 'deposits-for-woocommerce'); ?></th>", $file_content, $time );
+  $file_contents	=	str_replace("Due Payment", "Pay Guide", $file_content, $time );
   
-  file_put_contents($path_to_file, $file_contents);
+   file_put_contents($path_to_file, $file_contents); */
