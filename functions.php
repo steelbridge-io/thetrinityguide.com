@@ -8,6 +8,7 @@ include_once( get_stylesheet_directory() . '/lib/custom-cta-header.php' );
 include_once( get_stylesheet_directory() . '/lib/fishing-report-cpt.php' );
 include_once( get_stylesheet_directory() . '/lib/animate-in.php' );
 include_once( get_stylesheet_directory() . '/lib/woocommerce.php');
+include_once( get_stylesheet_directory() . '/lib/testimonials.php');
 
 add_action('genesis_header', 'add_featured_image', 20);
 function add_featured_image()
@@ -75,8 +76,6 @@ add_action( 'wp_enqueue_scripts', 'minimum_enqueue_scripts' );
 function minimum_enqueue_scripts() {
   
     wp_enqueue_style ( 'custom-style', get_stylesheet_directory_uri() . '/css/custom.css', array(), null, 'all' );
-	
-    wp_enqueue_script( 'minimum-responsive-menu', get_bloginfo( 'stylesheet_directory' ) . '/js/responsive-menu.js', array( 'jquery' ), '1.0.0' );
   
     wp_register_style('font-awesome', 'https://use.fontawesome.com/releases/v5.2.0/css/all.css');
     wp_enqueue_style('font-awesome');
@@ -85,19 +84,23 @@ function minimum_enqueue_scripts() {
 	wp_enqueue_style( 'minimum-google-fonts', 'https://fonts.googleapis.com/css?family=Roboto:300,400|Roboto+Slab:300,
 	400', array(), CHILD_THEME_VERSION );
 	wp_enqueue_style ('mailchimp', '//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css', array(), null, 'all' );
+  
+    wp_enqueue_script( 'minimum-responsive-menu', get_bloginfo( 'stylesheet_directory' ) . '/js/responsive-menu.js', array( 'jquery' ), '1.0.0' );
+  
+    wp_register_script( 'jquery3.2.1', 'https://code.jquery.com/jquery-3.2.1.min.js', array(), '3.2.1', true );
+    wp_add_inline_script( 'jquery3.2.1', 'var jQuery3_2_1 = $.noConflict(true);' );
  
 	wp_enqueue_script('global-js', get_stylesheet_directory_uri() . '/js/global-custom.js', array(), '1.0.0', true );
   
-    wp_enqueue_script('parallax-js', get_stylesheet_directory_uri() . '/parallax/parallaxjs/parallax.min.js', array() ,
-    '1.4.2', true );
+    wp_enqueue_script('parallax-js', get_stylesheet_directory_uri() . '/parallax/parallaxjs/parallax.min.js', array() , '1.4.2', true );
     
     wp_enqueue_script('gravityform-woo', get_stylesheet_directory_uri() . '/js/gravityforms.js', array(), '', true );
-  
-    if( is_home() ) {
-      wp_enqueue_script('custom-js', get_stylesheet_directory_uri() . '/js/slide-in-collapse.js', array(), '1.0.0',
-        true);
+    
+    if( is_home()) {
+      wp_enqueue_script('slide-in-js', get_stylesheet_directory_uri() . '/js/slide-in-collapse.js', array(), '1.0.0', true);
+      wp_register_script( 'bootstrap-js', 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js', array(), '5.0', true );
+      wp_enqueue_script( 'bootstrap-js');
     }
-
 }
 
 //* Add new image sizes
