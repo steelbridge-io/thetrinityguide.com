@@ -743,6 +743,17 @@ img.ttg-logo {
 }
 
 /* === Testimonials 2 === */
+.container-fluid.wide {
+  background-color: #cccccc;
+}
+.container-fluid.wide h1 {
+  padding-top: 1.618em;
+}
+.container-fluid.wide .container.narrow {
+  width: 60%;
+  max-width: 1500px;
+}
+
 .fp-testimonial-two {
   width: 100%;
   text-align: center;
@@ -768,11 +779,10 @@ img.ttg-logo {
   position: relative;
   width: 100%;
   overflow: hidden;
-  background-color: #f5f5f5;
-  padding: 2.618em 0;
-  height: 200px;
-  max-height: 200px;
-  min-height: 200px;
+  background-color: #cccccc;
+  padding: 0.618em 0 1.618em 0;
+  height: 260px;
+  transition: 0.5s;
 }
 
 .carousel-inner::after {
@@ -790,7 +800,7 @@ img.ttg-logo {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   transition: transform 0.6s ease-in-out;
-  background-color: #f5f5f5;
+  background-color: #cccccc;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -1023,6 +1033,31 @@ img.ttg-logo {
 @media (min-width: 1400px) {
   .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
     max-width: 1320px;
+  }
+}
+@media (max-width: 1199.98px) {
+  .carousel-inner {
+    height: 320px;
+    transition: 0.5s;
+  }
+}
+@media (max-width: 991.98px) {
+  .carousel-inner {
+    height: 400px;
+    transition: 0.5s;
+  }
+}
+@media (max-width: 767.98px) {
+  .carousel-inner {
+    height: 500px;
+    transition: 0.5s;
+  }
+}
+@media (max-width: 575.98px) {
+  .carousel-inner {
+    height: 600px;
+    max-height: 600px;
+    transition: 0.5s;
   }
 }
 /* === Above Footer Widget === */
@@ -1687,6 +1722,12 @@ ul.wc-block-grid__products li.wc-block-grid__product {
     display: block;
   }
 }
+/** SCSS Fonts And Typography
+=============================== */
+.lead {
+  font-size: 1.2rem;
+}
+
 /** Media Queries
 ========================================== */
 @media (min-width: 1179px) {
