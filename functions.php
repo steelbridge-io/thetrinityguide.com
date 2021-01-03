@@ -411,19 +411,6 @@ function custom_content_after_body_open_tag() {
     }
   }
   
-  remove_action('woocommerce_shop_loop_item_title', 'woocommerce_template_loop_product_title');
-  add_action( 'woocommerce_before_shop_loop_item', 'woocommerce_template_loop_product_title' );
-  
-  /**
-   * Change number or products per row to 3
-   */
-  add_filter('loop_shop_columns', 'loop_columns', 999);
-  if (!function_exists('loop_columns')) {
-    function loop_columns() {
-      return 3; // 3 products per row
-    }
-  }
-
  // add_action('wp_head', 'my_custom_css' );
   
   // Find and change Due Date to Pay Guide
