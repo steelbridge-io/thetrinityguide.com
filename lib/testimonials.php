@@ -20,6 +20,8 @@
                 <div class="carousel-item">
                   <div class="container narrow">
                   <p class="text-center lead">"We love fishing with Alex. He works really hard to find the fish and we\'ve caught a lot of them on our trips. What makes it really great is his beautiful comfortable boat (you can get out of the sun) and the great conversation. He\'s a serious fisherman, but a lot of fun too. We have a blast"</p>
+                  <p class="text-center fw-bolder">Anonymous<br>
+                    Fished on Shasta Lake with Alex.</p>
                   </div>
                 </div>
                 
