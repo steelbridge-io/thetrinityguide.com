@@ -27,7 +27,6 @@ function add_featured_image()
   }
 }
 
-
 add_action('genesis_after_header', 'easingslider_after_header_home', 01);
 function easingslider_after_header_home() {
   if ( is_home() ) {
