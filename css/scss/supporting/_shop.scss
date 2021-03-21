@@ -1,11 +1,26 @@
 /** SCSS Shop
 ========================== */
+.post-type-archive-product {
+  .woocommerce-notices-wrapper {
+    margin-top: 5em;
+  }
+  .wp-block-button__link {
+    background-color: $orange;
+    color: $black;
+    transition: 0.5s;
+  }
+  .wp-block-button__link:hover {
+    background-color: $brown;
+    color: $whitesmoke;
+    transition: 0.5s;
+  }
+}
 
 #ttg-shop {
   .widget-title {
     text-align: center;
     font-size: 4vw;
-    margin-top: 1.618em;
+    margin-top: 0.618em;
   }
   background-color: #f5f5f5;
   .products {
@@ -23,7 +38,6 @@
   }
 }
 
-
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {}
 
@@ -38,7 +52,17 @@
 }
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+  .page-description {
+    display: flex;
+    justify-content: center;
+    .wc-block-featured-product {
+      width: 48%;
+      float: left;
+      margin: 5px;
+    }
+  }
+}
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {}
