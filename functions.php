@@ -73,7 +73,7 @@ add_theme_support( 'genesis-responsive-viewport' );
 add_action( 'wp_enqueue_scripts', 'minimum_enqueue_scripts' );
 function minimum_enqueue_scripts() {
   
-    wp_enqueue_style ( 'custom-style', get_stylesheet_directory_uri() . '/css/scss/custom.css', array(), null, 'all' );
+    wp_enqueue_style ( 'custom-style', get_stylesheet_directory_uri() . '/css/custom.css', array(), null, 'all' );
 	
     wp_enqueue_script( 'minimum-responsive-menu', get_bloginfo( 'stylesheet_directory' ) . '/js/responsive-menu.js', array( 'jquery' ), '1.0.0' );
   
@@ -154,7 +154,6 @@ function minimum_secondary_menu_args( $args ){
 
 	$args['depth'] = 1;
 	return $args;
-	
 }
 
 // Inserts Instafeed

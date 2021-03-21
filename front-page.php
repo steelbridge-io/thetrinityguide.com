@@ -5,7 +5,6 @@
     
     $classes[] = 'minimum';
     return $classes;
-    
   }
   
   //* Add widget support for homepage if widgets are being used
@@ -37,7 +36,6 @@
       
     }
   }
-  
   //* Add markup for homepage widgets
   function minimum_home_featured() {
     
@@ -66,9 +64,7 @@
     
     genesis_structural_wrap( 'home-featured', 'close' );
     echo '</div>'; //* end .home-featured
-    
   }
-  
   //* Genesis grid loop
   function minimum_grid_loop_helper() {
     
@@ -84,11 +80,8 @@
       ) );
       
     } else {
-      
       genesis_standard_loop();
-      
     }
     
   }
-  
   genesis();
