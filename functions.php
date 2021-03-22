@@ -8,6 +8,7 @@ include_once( get_stylesheet_directory() . '/lib/custom-cta-header.php' );
 include_once( get_stylesheet_directory() . '/lib/fishing-report-cpt.php' );
 include_once( get_stylesheet_directory() . '/lib/animate-in.php' );
 include_once( get_stylesheet_directory() . '/lib/woocommerce.php');
+include_once( get_stylesheet_directory() . '/lib/nathan-fishing-reports.php');
 
 add_action('genesis_header', 'add_featured_image', 20);
 function add_featured_image()
