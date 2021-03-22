@@ -1,7 +1,7 @@
 <?php
 /**
  * Template Name: Fishing Report
- * Template Post Type: post, page, fishing_report
+ * Template Post Type: post, page, fishing_report, nathans_report
  * Description: Displays a snippet of the most recent fishing reports per category.
  */
 

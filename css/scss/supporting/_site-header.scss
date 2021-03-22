@@ -1,6 +1,5 @@
 /* ====  Site Header  ==== */
 
-
 .site-inner.featured-img-wrap {
   width: 100%;
   height: auto;
@@ -22,4 +21,11 @@
 .genesis-nav-menu .current-menu-item > a,
 .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
   color: grey;
+}
+#guides-reports {
+  background-color: #ccc;
+  padding-top: 1.618em;
+  .guides-row.row {
+    padding: 1.618em !important;
+  }
 }

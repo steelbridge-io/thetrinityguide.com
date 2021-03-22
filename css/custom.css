@@ -6,7 +6,7 @@
  * - Custom Tweaks
  * - Animate In
  * - Links
- * - Paralax
+ * - Parallax
  * - Buttons
  * - Custom Padding And Margins
  * - Misc
@@ -442,6 +442,12 @@ a:hover {
 .genesis-nav-menu .current-menu-item > a,
 .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
   color: grey; }
+
+#guides-reports {
+  background-color: #ccc;
+  padding-top: 1.618em; }
+  #guides-reports .guides-row.row {
+    padding: 1.618em !important; }
 
 /* === Entry Title === */
 .entry-title a:hover {
