@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA;;GAEG;AAKC,2EAAI;EACH,SAAS,EAAE,eAAe",
+"sources": ["../../../plugins/woocommerce/assets/css/twenty-twenty-one-admin.scss"],
+"names": [],
+"file": "twenty-twenty-one-admin.css"
+}

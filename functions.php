@@ -412,3 +412,10 @@ function custom_content_after_body_open_tag() {
   $file_contents	=	str_replace("<th><?php echo __('Due Payment:', 'deposits-for-woocommerce'); ?></th>", "<th><?php echo __('Pay Guide:', 'deposits-for-woocommerce'); ?></th>", $file_content, $time );
   
   file_put_contents($path_to_file, $file_contents);
+  
+  add_filter( 'woocommerce_page_title', 'woo_shop_page_title');
+  function woo_shop_page_title( $page_title ) {
+    if( 'Shop' == $page_title) {
+      return "Book Your Guide Online - Visit Our Shop";
+    }
+  }
