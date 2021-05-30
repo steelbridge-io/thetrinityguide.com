@@ -303,12 +303,12 @@ function top_para_img() {
     
     ob_start();
     
-    echo '</main>','</div>','</div>','</div>','</div>', '<div id="top-parallax-cta" class=cta-box>','<div
-      class="cta">','<div class="cta-container module-seven">';
+    echo '</main>','</div>','</div>','</div>','</div>', '<div id="top-parallax-cta" class="cta-box" data-no-lazy="1">','<div
+      class="cta">','<div class="cta-container module-seven" data-no-lazy="1">';
     
     dynamic_sidebar('top-parallax-cta');
     
-    echo '</div>','</div>','<div style=z-index:200; id="topparallax" class="parallax-window" data-parallax=scroll data-image-src=/wp-content/uploads/2019/07/IMG_20190726_123758_720.jpg></div>','</div>','<div class=site-container>','<div class=site-inner>','<div class=wrap>','<div class=content-sidebar-wrap>','<main class=content>';
+    echo '</div>','</div>','<div data-no-lazy="1" style=z-index:200; id="topparallax" class="parallax-window" data-parallax=scroll data-image-src=/wp-content/uploads/2019/07/IMG_20190726_123758_720.jpg></div>','</div>','<div class=site-container>','<div class=site-inner>','<div class=wrap>','<div class=content-sidebar-wrap>','<main class=content>';
   
     ob_end_flush();
   }
@@ -321,9 +321,9 @@ function after_content_img() {
     
     ob_start();
 	  
-		echo '</div>', '</div>', '</div>', '<div id="bottom-parallax-cta" class="cta-box">', '<div class="cta">', '<div class="cta-container">';
+		echo '</div>', '</div>', '</div>', '<div id="bottom-parallax-cta" class="cta-box" data-no-lazy="1">', '<div class="cta">', '<div class="cta-container" data-no-lazy="1">';
 		dynamic_sidebar ('cta-parallax');
-		echo '</div>', '</div>', '<div style="z-index:200;" class="parallax-window" data-parallax="scroll" data-image-src="/wp-content/uploads/2017/06/backstretch-fall.jpg">', '</div>', '</div>';
+		echo '</div>', '</div>', '<div style="z-index:200;" data-no-lazy="1" class="parallax-window" data-parallax="scroll" data-image-src="/wp-content/uploads/2017/06/backstretch-fall.jpg">', '</div>', '</div>';
     
     ob_end_flush();
 		

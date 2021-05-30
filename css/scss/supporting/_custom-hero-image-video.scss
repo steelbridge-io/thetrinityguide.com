@@ -71,9 +71,7 @@ new-bg-img {
   background: rgba(14, 28, 29, 0.50);
 }
 
-//@media (pointer: coarse) and (hover: none) {
-@media (max-width: 768px ) {
-
+@media (pointer: coarse) and (hover: none) {
   #hero-header {
     background: url('https://thetrinityguide.com/wp-content/uploads/2020/09/image0-1-scaled.jpeg') black no-repeat center center scroll;
   }

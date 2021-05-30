@@ -654,9 +654,6 @@
           )
       );
       
-      
-      
-      
       genesis_markup(
           array(
               'close' => '</div>',
